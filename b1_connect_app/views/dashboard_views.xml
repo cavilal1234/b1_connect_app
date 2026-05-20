@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <record id="view_sap_connector_dashboard_form" model="ir.ui.view">
-        <name>sap.connector.dashboard.form</name>
-        <model>res.company</model> <arch type="xml">
+        <field name="name">sap.connector.dashboard.form</field>
+        <field name="model">res.company</field>
+        <field name="arch" type="xml">
             <form string="Dashboard SAP" create="false" edit="false" delete="false">
                 <sheet>
                     <div class="wrap" style="padding: 20px; background-color: #fff; border-radius: 8px;">
@@ -20,10 +21,6 @@
                                     <strong>Clientes, Productos, Inventarios y Pedidos de Venta</strong> 
                                     entre Odoo y el Service Layer de SAP Business One.
                                 </p>
-                                <p style="margin-top: 15px; color: #444;">
-                                    Nuestra infraestructura híbrida (Worker Services en C#) garantiza que sus datos 
-                                    viajen de forma 100% automatizada, segura y cifrada, sin comprometer el rendimiento de su ERP.
-                                </p>
                             </div>
                         </div>
 
@@ -37,15 +34,15 @@
                     </div>
                 </sheet>
             </form>
-        </arch>
+        </field>
     </record>
 
     <record id="action_sap_connector_dashboard" model="ir.actions.act_window">
-        <name>Conector SAP Business One</name>
-        <res_model>res.company</res_model>
-        <view_mode>form</view_mode>
-        <view_id ref="view_sap_connector_dashboard_form"/>
-        <target>current</target>
+        <field name="name">Conector SAP Business One</field>
+        <field name="res_model">res.company</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_sap_connector_dashboard_form"/>
+        <field name="target">current</field>
     </record>
 
     <menuitem id="menu_sap_connector_root" 
