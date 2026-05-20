@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="action_sap_connector_dashboard" id="ir.actions.act_window">
+    <record id="action_sap_connector_dashboard" model="ir.actions.act_window">
         <name>Conector SAP Business One</name>
-        <res_model>res.config.settings</res_model> <view_mode>form</view_mode>
+        <res_model>res.config.settings</res_model>
+        <view_mode>form</view_mode>
         <target>current</target>
     </record>
 
