@@ -7,6 +7,7 @@
     'author': 'Nova Desarrollos CR',
     'website': 'https://www.novadesarrolloscr.com',
     'license': 'LGPL-3',  # Al ser una app de marketing/captura, ponerla gratis (LGPL-3) atrae mas leads
+    'images': ['static/description/banner.jpg'],
     'depends': [
         'base'
     ],
