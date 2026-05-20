@@ -1,30 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="action_sap_connector_dashboard" model="ir.actions.client">
+    <record id="action_sap_connector_dashboard" id="ir.actions.act_window">
         <name>Conector SAP Business One</name>
-        <field name="tag">apps</field>
-        <field name="target">current</field>
-        <field name="res_model">base</field>
-        <field name="params" eval="{
-            'description': 'Bienvenido al Conector Oficial de SAP Business One desarrollado por Nova Desarrollos CR.'
-        }"/>
+        <res_model>res.config.settings</res_model> <view_mode>form</view_mode>
+        <target>current</target>
     </record>
 
     <record id="view_sap_connector_dashboard_form" model="ir.ui.view">
         <name>sap.connector.dashboard.form</name>
-        <model>base</model>
-        <field name="arch" type="xml">
-            <form string="Dashboard SAP" create="false" edit="false" save="false">
-                <sheet>
+        <model>res.config.settings</model>
+        <inherit_id ref="base.res_config_settings_view_form"/>
+        <arch type="xml">
+            <xpath expr="//form" position="inside">
+                <div class="wrap" style="padding: 20px; background-color: #fff; border-radius: 8px;">
                     <div class="oe_title text-center" style="margin-bottom: 30px;">
-                        <h1 style="color: #003366; font-size: 32px; font-weight: bold;">
+                        <h1 style="color: #003366; font-size: 32px; font-weight: bold; text-align: center;">
                             🔌 Conector SAP Business One &amp; Odoo
                         </h1>
-                        <h3 style="color: #666;">Por Nova Desarrollos CR</h3>
+                        <h3 style="color: #666; text-align: center;">Por Nova Desarrollos CR</h3>
                     </div>
 
                     <div class="row" style="margin-top: 20px; font-size: 16px; line-height: 1.6;">
-                        <div class="col-12 text-center" style="max-width: 800px; margin: 0 auto;">
+                        <div class="col-12 text-center" style="max-width: 800px; margin: 0 auto; text-align: center;">
                             <p>
                                 Optimice la operación de su empresa sincronizando en tiempo real sus 
                                 <strong>Clientes, Productos, Inventarios y Pedidos de Venta</strong> 
@@ -37,16 +34,16 @@
                         </div>
                     </div>
 
-                    <div class="text-center" style="margin-top: 40px; margin-bottom: 20px;">
+                    <div class="text-center" style="margin-top: 40px; margin-bottom: 20px; text-align: center;">
                         <a href="https://www.novadesarrolloscr.com/" target="_blank" 
                            class="btn btn-primary btn-lg" 
-                           style="background-color: #003366; border-color: #003366; padding: 15px 35px; font-size: 18px; border-radius: 5px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                           style="background-color: #003366; border-color: #003366; padding: 15px 35px; font-size: 18px; border-radius: 5px; font-weight: bold; color: white; text-decoration: none; display: inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
                             🚀 Solicitar Activación e Integración de API
                         </a>
                     </div>
-                </sheet>
-            </form>
-        </field>
+                </div>
+            </xpath>
+        </arch>
     </record>
 
     <menuitem id="menu_sap_connector_root" 
