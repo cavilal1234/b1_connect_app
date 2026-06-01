@@ -19,7 +19,12 @@
                                 <p>
                                     Optimice la operación de su empresa sincronizando en tiempo real sus 
                                     <strong>Clientes, Productos, Inventarios y Pedidos de Venta</strong> 
-                                    entre Odoo y el SDK DI API o el Service Layer de SAP Business One...
+                                    entre Odoo y el SDK DI API o el Service Layer de SAP Business One.
+                                </p>
+                                <p>
+                                    Nuestro conector es la solución ideal para empresas que buscan una integración robusta, 
+                                    eficiente y fácil de usar entre sus sistemas ERP. Con una configuración sencilla, 
+                                    podrá disfrutar de una sincronización fluida y sin complicaciones.
                                 </p>
                             </div>
                         </div>
@@ -30,10 +35,10 @@
                                style="background-color: #003366; border-color: #003366; padding: 15px 35px; font-size: 18px; border-radius: 5px; font-weight: bold; color: white; text-decoration: none; display: inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
                                 🚀 Solicitar Activación e Integración de API
                             </a>
+                        </div>
 
-                            <p class="text-muted" style="margin-top: 15px; font-size: 14px; color: #666; font-style: italic;">
-                                Sírvase en llenar el formulario de contacto al redirigirlo a la página de activación.
-                            </p>
+                        <div class="text-center" style="margin-top: 30px; color: #666; font-size: 14px; line-height: 1.6;">
+                            <p>También puede escribirnos a <a href="mailto:soporte@novadesarrolloscr.com" style="color: #003366; text-decoration: none;">soporte@novadesarrolloscr.com</a> o bien a <a href="mailto:proyectosdbadm@gmail.com" style="color: #003366; text-decoration: none;">proyectosdbadm@gmail.com</a> con gusto le contestaremos a la brevedad</p>
                         </div>
                     </div>
                 </sheet>
